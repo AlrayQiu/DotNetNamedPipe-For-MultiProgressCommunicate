@@ -1,4 +1,0 @@
-Invoking command in '/workspaces/NamedPipTest/build/SharedMemory0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory0 -- -j20 -l20
-Invoked command in '/workspaces/NamedPipTest/build/SharedMemory0' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory0 -- -j20 -l20
-Invoking command in '/workspaces/NamedPipTest/build/SharedMemory0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/NamedPipTest/build/SharedMemory0
-Invoked command in '/workspaces/NamedPipTest/build/SharedMemory0' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/NamedPipTest/build/SharedMemory0

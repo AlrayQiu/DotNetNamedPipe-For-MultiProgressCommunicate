@@ -1,7 +1,0 @@
-[0.100s] Invoking command in '/workspaces/NamedPipTest/build/SharedMemory1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory1 -- -j20 -l20
-[0.380s] [?1h=MSBuild version 17.8.5+b5265ef37 for .NET
-[1.250s] Attempting to cancel the build...
-[1.435s] gmake[2]: *** [CMakeFiles/run.dir/build.make:70: run] Interrupt
-[1.436s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/run.dir/all] Interrupt
-[1.437s] gmake: *** [Makefile:146: all] Interrupt
-[1.445s] Invoked command in '/workspaces/NamedPipTest/build/SharedMemory1' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory1 -- -j20 -l20
