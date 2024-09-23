@@ -1,0 +1,33 @@
+[0.111s] Invoking command in '/workspaces/NamedPipTest/build/SharedMemory1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory1 -- -j20 -l20
+[0.398s] [?1h=MSBuild version 17.8.5+b5265ef37 for .NET
+[1.502s]   Determining projects to restore...
+[1.949s]   All projects are up-to-date for restore.
+[1.977s] [39;49m[93m/usr/lib/dotnet/sdk/8.0.105/Current/SolutionFile/ImportAfter/Microsoft.NET.Sdk.Solution.targets(36,5): warning NETSDK1194: The "--output" option isn't supported when building a solution. Specifying a solution-level output path results in all projects copying outputs to the same directory, which can lead to inconsistent builds. [/workspaces/NamedPipTest/SharedMemory1/SharedMemory1.sln]
+[4.262s] [39;49m  SharedMemory1 -> /workspaces/NamedPipTest/SharedMemory1/bin/Release/net8.0/linux-x64/SharedMemory1.dll
+[4.585s]   SharedMemory1 -> /workspaces/NamedPipTest/SharedMemory1/bin/
+[4.610s] Built target run
+[4.620s] Invoked command in '/workspaces/NamedPipTest/build/SharedMemory1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory1 -- -j20 -l20
+[4.663s] Invoking command in '/workspaces/NamedPipTest/build/SharedMemory1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/NamedPipTest/build/SharedMemory1
+[4.670s] -- Install configuration: ""
+[4.676s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/declarations
+[4.697s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/declarations/Test.json
+[4.709s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/maps
+[4.730s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/maps/StaticDijkstraMap.json
+[4.745s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/maps/StaticESDFMap.json
+[4.760s] -- Up-to-date: /workspaces/NamedPipTest/install/lib/SharedMemory1/SharedMemory1
+[4.784s] -- Up-to-date: /workspaces/NamedPipTest/install/share/ament_index/resource_index/package_run_dependencies/SharedMemory1
+[4.816s] -- Up-to-date: /workspaces/NamedPipTest/install/share/ament_index/resource_index/parent_prefix_path/SharedMemory1
+[4.829s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/ament_prefix_path.sh
+[4.848s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/ament_prefix_path.dsv
+[4.860s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/path.sh
+[4.877s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/path.dsv
+[4.890s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.bash
+[4.904s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.sh
+[4.915s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.zsh
+[4.928s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.dsv
+[4.941s] -- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/package.dsv
+[5.004s] -- Up-to-date: /workspaces/NamedPipTest/install/share/ament_index/resource_index/packages/SharedMemory1
+[5.020s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/cmake/SharedMemory1Config.cmake
+[5.033s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/cmake/SharedMemory1Config-version.cmake
+[5.050s] -- Up-to-date: /workspaces/NamedPipTest/install/share/SharedMemory1/package.xml
+[5.059s] Invoked command in '/workspaces/NamedPipTest/build/SharedMemory1' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /workspaces/NamedPipTest/build/SharedMemory1

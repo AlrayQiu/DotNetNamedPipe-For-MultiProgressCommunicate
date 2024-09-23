@@ -18,8 +18,8 @@ namespace Tlarc
                 internal static string ConfigurationPath = "./configuration/";
                 internal static string RootPath = "./";
 #else
-                internal static string ConfigurationPath = Environment.ProcessPath + "/../../../share/tlarc/declarations/";
-                internal static string RootPath = Environment.ProcessPath + "/../../../share/tlarc/";
+                internal static string ConfigurationPath = Environment.ProcessPath + "/../../../share/SharedMemory1/declarations/";
+                internal static string RootPath = Environment.ProcessPath + "/../../../share/SharedMemory1/";
 #endif
         }
 }

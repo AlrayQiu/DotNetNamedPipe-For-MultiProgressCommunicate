@@ -1,0 +1,5 @@
+[?1h=MSBuild version 17.8.5+b5265ef37 for .NET
+Attempting to cancel the build...
+gmake[2]: *** [CMakeFiles/run.dir/build.make:70: run] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/run.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

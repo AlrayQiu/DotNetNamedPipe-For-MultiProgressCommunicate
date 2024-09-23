@@ -1,0 +1,29 @@
+[?1h=MSBuild version 17.8.5+b5265ef37 for .NET
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+[39;49m[93m/usr/lib/dotnet/sdk/8.0.105/Current/SolutionFile/ImportAfter/Microsoft.NET.Sdk.Solution.targets(36,5): warning NETSDK1194: The "--output" option isn't supported when building a solution. Specifying a solution-level output path results in all projects copying outputs to the same directory, which can lead to inconsistent builds. [/workspaces/NamedPipTest/SharedMemory1/SharedMemory1.sln]
+[39;49m  SharedMemory1 -> /workspaces/NamedPipTest/SharedMemory1/bin/Release/net8.0/linux-x64/SharedMemory1.dll
+  SharedMemory1 -> /workspaces/NamedPipTest/SharedMemory1/bin/
+Built target run
+-- Install configuration: ""
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/declarations
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/declarations/Test.json
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/maps
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/maps/StaticDijkstraMap.json
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/maps/StaticESDFMap.json
+-- Installing: /workspaces/NamedPipTest/install/lib/SharedMemory1/SharedMemory1
+-- Installing: /workspaces/NamedPipTest/install/share/ament_index/resource_index/package_run_dependencies/SharedMemory1
+-- Installing: /workspaces/NamedPipTest/install/share/ament_index/resource_index/parent_prefix_path/SharedMemory1
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/ament_prefix_path.sh
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/ament_prefix_path.dsv
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/path.sh
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/environment/path.dsv
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.bash
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.sh
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.zsh
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/local_setup.dsv
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/package.dsv
+-- Installing: /workspaces/NamedPipTest/install/share/ament_index/resource_index/packages/SharedMemory1
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/cmake/SharedMemory1Config.cmake
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/cmake/SharedMemory1Config-version.cmake
+-- Installing: /workspaces/NamedPipTest/install/share/SharedMemory1/package.xml

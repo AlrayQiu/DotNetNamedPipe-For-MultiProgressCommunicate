@@ -1,0 +1,10 @@
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/uninstall.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/SharedMemory0_uninstall.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/run.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/test.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/edit_cache.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/rebuild_cache.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/list_install_components.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/install.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/install/local.dir
+/workspaces/NamedPipTest/build/SharedMemory0/CMakeFiles/install/strip.dir

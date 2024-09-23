@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Timers;
+using MathNet.Numerics;
 using Rcl;
 using Rcl.Logging;
 using Tlarc.Init;
@@ -17,6 +18,7 @@ class Process
     readonly object _lock = new();
     bool _lockWasTaken = false;
     List<Task>[] tasks = [];
+    System.Threading.Timer timer;
     public void Start()
     {
         double delay_time = 1000.0 / fps;
@@ -25,13 +27,7 @@ class Process
 
         Awake();
 
-        System.Timers.Timer timer = new System.Timers.Timer
-        {
-            Enabled = true,
-            Interval = delay_time //执行间隔时间,单位为毫秒; 这里实际间隔为10分钟  
-        };
-        timer.Elapsed += new ElapsedEventHandler(LifeCycle);
-        timer.Start();
+        timer = new(LifeCycle, null, 0, (int)Math.Round(delay_time));
     }
     void Awake()
     {
@@ -51,7 +47,8 @@ class Process
         }
     }
 
-    void LifeCycle(object? source, ElapsedEventArgs e)
+    DateTime last;
+    void LifeCycle(object? state)
     {
         if (_lockWasTaken)
         {
@@ -59,6 +56,8 @@ class Process
         }
         lock (_lock)
         {
+            Console.WriteLine("FPS:{0}", 1 / (DateTime.Now - last).Duration().TotalSeconds);
+            last = DateTime.Now;
             _lockWasTaken = true;
             InputUpdate();
             Update();

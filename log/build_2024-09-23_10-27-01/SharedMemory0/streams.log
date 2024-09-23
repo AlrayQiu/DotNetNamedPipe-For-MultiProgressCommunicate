@@ -1,0 +1,38 @@
+[0.047s] Invoking command in '/workspaces/NamedPipTest/build/SharedMemory0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/NamedPipTest/SharedMemory0 -DCMAKE_INSTALL_PREFIX=/workspaces/NamedPipTest/install
+[0.364s] -- The C compiler identification is GNU 11.4.0
+[0.620s] -- The CXX compiler identification is GNU 11.4.0
+[0.677s] -- Detecting C compiler ABI info
+[1.208s] -- Detecting C compiler ABI info - done
+[1.235s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.239s] -- Detecting C compile features
+[1.240s] -- Detecting C compile features - done
+[1.294s] -- Detecting CXX compiler ABI info
+[1.821s] -- Detecting CXX compiler ABI info - done
+[1.847s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.849s] -- Detecting CXX compile features
+[1.854s] -- Detecting CXX compile features - done
+[1.921s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.043s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.319s] WARNING: Package name "SharedMemory0" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[2.660s] -- Configuring done
+[3.000s] -- Generating done
+[3.086s] -- Build files have been written to: /workspaces/NamedPipTest/build/SharedMemory0
+[3.102s] Invoked command in '/workspaces/NamedPipTest/build/SharedMemory0' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /workspaces/NamedPipTest/SharedMemory0 -DCMAKE_INSTALL_PREFIX=/workspaces/NamedPipTest/install
+[3.109s] Invoking command in '/workspaces/NamedPipTest/build/SharedMemory0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory0 -- -j20 -l20
+[3.420s] [?1h=MSBuild version 17.8.5+b5265ef37 for .NET
+[4.556s]   Determining projects to restore...
+[5.364s]   Restored /workspaces/NamedPipTest/SharedMemory0/SharedMemory0.csproj (in 314 ms).
+[5.397s] [39;49m[93m/usr/lib/dotnet/sdk/8.0.105/Current/SolutionFile/ImportAfter/Microsoft.NET.Sdk.Solution.targets(36,5): warning NETSDK1194: The "--output" option isn't supported when building a solution. Specifying a solution-level output path results in all projects copying outputs to the same directory, which can lead to inconsistent builds. [/workspaces/NamedPipTest/SharedMemory0/SharedMemory0.sln]
+[16.393s] [39;49m  SharedMemory0 -> /workspaces/NamedPipTest/SharedMemory0/bin/Release/net8.0/linux-x64/SharedMemory0.dll
+[18.469s]   SharedMemory0 -> /workspaces/NamedPipTest/SharedMemory0/bin/
+[18.496s] Built target run
+[18.529s] Invoked command in '/workspaces/NamedPipTest/build/SharedMemory0' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /workspaces/NamedPipTest/build/SharedMemory0 -- -j20 -l20
+[18.594s] Invoking command in '/workspaces/NamedPipTest/build/SharedMemory0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/NamedPipTest/build/SharedMemory0
+[18.612s] -- Install configuration: ""
+[18.614s] [31mCMake Error at cmake_install.cmake:46 (file):
+[18.615s]   file INSTALL cannot find
+[18.617s]   "/workspaces/NamedPipTest/SharedMemory0/declarations": No such file or
+[18.617s]   directory.
+[18.619s] 
+[18.619s] [0m
+[18.620s] Invoked command in '/workspaces/NamedPipTest/build/SharedMemory0' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /workspaces/NamedPipTest/build/SharedMemory0

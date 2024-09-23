@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(tlarc)
+project(SharedMemory0)
 
 find_package(ament_cmake REQUIRED)
 
