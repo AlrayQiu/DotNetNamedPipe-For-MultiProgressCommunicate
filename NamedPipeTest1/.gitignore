@@ -1,0 +1,11 @@
+.mono
+.vscode
+.github
+Docker*
+obj/
+install/
+UnityNavMesh/
+build/
+External/
+bin/
+log/

@@ -1,0 +1,25 @@
+[*.{cs,vb}]
+
+# IDE0040: 添加可访问性修饰符
+dotnet_style_require_accessibility_modifiers = never
+
+# CS8618: 在退出构造函数时，不可为 null 的字段必须包含非 null 值。请考虑声明为可以为 null。
+dotnet_diagnostic.CS8618.severity = none
+
+# CS8602: 解引用可能出现空引用。
+dotnet_diagnostic.CS8602.severity = none
+
+# CS8602: 解引用可能出现空引用。
+dotnet_diagnostic.CS8602.severity = none
+
+# CS9107: 参数捕获到封闭类型状态，其值也传递给基构造函数。该值也可能由基类捕获。
+dotnet_diagnostic.CS9107.severity = none
+
+# CA1707: Identifiers should not contain underscores
+dotnet_diagnostic.CA1707.severity = none
+
+# IDE0049: Simplify Names
+dotnet_diagnostic.IDE0049.severity = none
+
+# IDE0049: Simplify Names
+dotnet_style_predefined_type_for_locals_parameters_members = true
