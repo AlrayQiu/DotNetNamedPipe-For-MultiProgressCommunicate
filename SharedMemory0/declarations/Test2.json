@@ -2,10 +2,12 @@
     "fps": 1000,
     "list": [
         {
-            "this_id": 2,
-            "input_id": {},
+            "this_id": 1,
+            "input_id": {
+                "server": 2
+            },
             "assembly": "SingleProcess",
-            "type": "Server",
+            "type": "Client",
             "arg": {}
         }
     ]

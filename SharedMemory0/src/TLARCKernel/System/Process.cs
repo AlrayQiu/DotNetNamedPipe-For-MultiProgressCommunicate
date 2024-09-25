@@ -18,7 +18,6 @@ class Process
     readonly object _lock = new();
     bool _lockWasTaken = false;
     List<Task>[] tasks = [];
-    System.Threading.Timer timer;
     public void Start()
     {
         double delay_time = 1000.0 / fps;
@@ -27,8 +26,19 @@ class Process
 
         Awake();
 
-        timer = new(LifeCycle, null, 0, (int)Math.Round(delay_time));
+        Task.Run(async () =>
+        {
+            using var timer = Ros2Def.context.CreateTimer(Ros2Def.node.Clock, TimeSpan.FromMilliseconds(value: delay_time));
+
+            while (true)
+            {
+                await timer.WaitOneAsync(false);
+                _ = Task.Run(LifeCycle);
+            }
+        }
+        );
     }
+
     void Awake()
     {
         tasks = new List<Task>[PoolDim + 1];
@@ -47,8 +57,7 @@ class Process
         }
     }
 
-    DateTime last;
-    void LifeCycle(object? state)
+    void LifeCycle()
     {
         if (_lockWasTaken)
         {
@@ -56,8 +65,6 @@ class Process
         }
         lock (_lock)
         {
-            Console.WriteLine("FPS:{0}", 1 / (DateTime.Now - last).Duration().TotalSeconds);
-            last = DateTime.Now;
             _lockWasTaken = true;
             InputUpdate();
             Update();

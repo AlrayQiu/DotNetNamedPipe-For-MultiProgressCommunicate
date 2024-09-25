@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Timers;
+using MathNet.Numerics;
 using Rcl;
 using Rcl.Logging;
 using Tlarc.Init;
@@ -25,14 +26,19 @@ class Process
 
         Awake();
 
-        System.Timers.Timer timer = new System.Timers.Timer
+        Task.Run(async () =>
         {
-            Enabled = true,
-            Interval = delay_time //执行间隔时间,单位为毫秒; 这里实际间隔为10分钟  
-        };
-        timer.Elapsed += new ElapsedEventHandler(LifeCycle);
-        timer.Start();
+            using var timer = Ros2Def.context.CreateTimer(Ros2Def.node.Clock, TimeSpan.FromMilliseconds(value: delay_time));
+
+            while (true)
+            {
+                await timer.WaitOneAsync(false);
+                _ = Task.Run(LifeCycle);
+            }
+        }
+        );
     }
+
     void Awake()
     {
         tasks = new List<Task>[PoolDim + 1];
@@ -51,7 +57,7 @@ class Process
         }
     }
 
-    void LifeCycle(object? source, ElapsedEventArgs e)
+    void LifeCycle()
     {
         if (_lockWasTaken)
         {

@@ -6,12 +6,15 @@ using Tlarc.IO.ROS2Msgs.Std;
 
 class Client : Component
 {
-    public Int32 int32;
+    public FloatMultiArray msg;
     public override void Start()
     {
-        int32 = new Int32(IOManager);
+        msg = new FloatMultiArray(IOManager);
 
-        int32.Subscript("tlarc/test", (data) => { Console.WriteLine("{0:D}\n", (int)DateTime.Now.Ticks - data); });
+        msg.Subscript("tlarc/test", (data) =>
+        {
+            Console.WriteLine("{0:F4}\n", (DateTime.Now.Ticks & 0xffff) / 10000f - data[0]);
+        });
     }
     public override void Update()
     {

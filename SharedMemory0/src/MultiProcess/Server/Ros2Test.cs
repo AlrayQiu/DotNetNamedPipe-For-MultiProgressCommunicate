@@ -6,19 +6,17 @@ using Tlarc.IO.ROS2Msgs.Std;
 
 class Server : Component
 {
-    public Int32 int32;
-    DateTime last;
+    public FloatMultiArray msg;
+    float[] data = new float[1];
     public override void Start()
     {
-        int32 = new Int32(IOManager);
+        msg = new FloatMultiArray(IOManager);
 
-        int32.RegistryPublisher("tlarc/test");
-        last = DateTime.Now;
+        msg.RegistryPublisher("tlarc/test");
     }
     public override void Update()
     {
-        Console.WriteLine("FPS:{0}", 1 / (DateTime.Now - last).Duration().TotalSeconds);
-        last = DateTime.Now;
-        int32.Publish((int)DateTime.Now.Ticks);
+        data[0] = (DateTime.Now.Ticks & 0xffff) / 10000f;
+        msg.Publish(data);
     }
 }

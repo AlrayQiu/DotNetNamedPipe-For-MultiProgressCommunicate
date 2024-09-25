@@ -18,7 +18,7 @@ namespace Tlarc
         static void Main(string[] args)
         {
             Ros2Def.context = new RclContext(args);
-            Ros2Def.node = Ros2Def.context.CreateNode("tlarc");
+            Ros2Def.node = Ros2Def.context.CreateNode("test");
 
             ProcessInit.Init(ref Processes, ref Components);
 

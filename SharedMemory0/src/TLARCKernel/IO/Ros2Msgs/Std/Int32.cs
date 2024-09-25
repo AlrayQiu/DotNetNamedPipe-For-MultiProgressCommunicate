@@ -28,7 +28,6 @@ namespace Tlarc.IO.ROS2Msgs.Std
             if (publisher == null)
                 return;
             nativeMsg.AsRef<Rosidl.Messages.Std.Int32.Priv>().Data = data;
-            publisher.Publish(nativeMsg);
             publishFlag = true;
         }
         public void Subscript(string topicName, Action<int> callback)
@@ -50,7 +49,7 @@ namespace Tlarc.IO.ROS2Msgs.Std
 
             Task.Run(async () =>
             {
-                using var timer = Ros2Def.context.CreateTimer(Ros2Def.node.Clock, TimeSpan.FromMilliseconds(value: 1));
+                using var timer = Ros2Def.context.CreateTimer(Ros2Def.node.Clock, TimeSpan.FromMilliseconds(value: 0.5));
                 while (true)
                 {
                     await timer.WaitOneAsync(false);

@@ -15,7 +15,7 @@ namespace Tlarc
         internal static class TlarcSystem
         {
 #if DEBUG
-                internal static string ConfigurationPath = "./configuration/";
+                internal static string ConfigurationPath = "./declarations/";
                 internal static string RootPath = "./";
 #else
                 internal static string ConfigurationPath = Environment.ProcessPath + "/../../../share/SharedMemory1/declarations/";

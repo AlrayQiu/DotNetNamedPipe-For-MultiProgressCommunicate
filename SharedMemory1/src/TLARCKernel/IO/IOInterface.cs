@@ -49,11 +49,11 @@ namespace Tlarc.IO
             bool l = false;
             await foreach (var i in subscription.ReadAllAsync())
             {
-                if (l)
-                    continue;
-                l = true;
+                // if (l)
+                //     continue;
+                // l = true;
                 handler(i);
-                l = false;
+                // l = false;
             }
             Console.WriteLine(name + ":Registry");
         }
